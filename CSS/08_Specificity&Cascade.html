@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+    <style>
+        /* This specifity of this selector is 1 */
+        h1 {
+            color: red !important;
+        }
+
+        /* This specifity of this selector is 10 */
+        .yellow {
+            color: yellow;
+        }
+
+        /* This specifity of this selector is 10 */
+        .cgreen {
+            color: green;
+        }
+
+        /* This specifity of this selector is 10 */
+        .cblue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="yellow cblue cgreen">CSS spexificty</h1>
+    <h1>inline Style> ID selector> Class> Element > Universal Selector</h1>
+</body>
+</html>
