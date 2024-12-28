@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        div {
+            border: 2px solid black;
+            position: relative;
+            height: 5000px;
+            background-color: beige;
+        }
+        .second{
+            /* position: relative;  top bottom left right positon dene k leya relative krna jaruri hai lakin uski pheli ali jhga vhi hogi */
+            /* left: 200px;  */
+            /* position: absolute; */
+            top: 100px;
+        }
+        .fourth{
+            position: fixed;
+        }
+        .third{
+            position: sticky;
+            top: 100px;
+        }
+       .box{
+        background-color: aquamarine;
+        height: 5000px;
+       }
+    </style>
+</head>
+<body>
+    <!-- static,relative,absolute,fixed,sticky 
+     by default static
+    -->
+    <div class="container">
+        <img class="first" src="https://picsum.photos/400/300" alt="Random image">
+        <img class="second" src="https://picsum.photos/400/300" alt="Random image">
+        <img class="third" src="https://picsum.photos/400/300" alt="Random image">
+        <img class="fourth" src="https://picsum.photos/400/300" alt="Random image">
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
