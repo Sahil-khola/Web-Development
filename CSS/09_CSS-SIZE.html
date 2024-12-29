@@ -1,51 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIZE IN CSS</title>
+    <title>SIZE</title>
     <style>
-        *{
-            margin: 0;padding: 0;
+        /* Relative size :- %,vh,vw is relative size  it diffrent for all devise*/
+        /* * {
+            margin: 0;
+            padding: 0;
         }
-        .box{
-            border: 2px solid;
-            background-color: aquamarine;
-            box-sizing: border-box;
-            /* width: 2048px; */
-            width: 80vw;
-            margin: auto;
+
+        .box {
+            border: 2px solid black;
+            width: 50%
         }
-        .container{
-            border: 2px solid;
-            background-color: aquamarine;
-            box-sizing: border-box;
-            /* width: 2048px; */
-            width: 80vw;
-            height: 80vh;
-            margin: 23px auto;
-            font-size: 1em;
-        }
-        html{
-            font-size: 12px;
-        }
-        .mycont{
-            background-color: red;
-            color: yellow;
-            font-size: 22px;
-            width: 100vmin;
-        }
+      .parent {
+        border: 2px solid red;
+        background-color: beige;
+        width: 50%;
+      }
+      .child {
+        border: 2px solid green;
+        background-color: aqua;
+        width: 20%;
+      }
+      .container {
+        border: 2px solid blue;
+        height: 100vh;
+        width: 50vw;
+      } */
+
+      /* Absolute size :- px,cm,mm,in,pt,pc is absolute size it is same for all device */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* .box1 {
+        border: 2px solid green;
+        font-size: 100px;
+      }
+      .wrapper {
+        font-size: 1em;
+      }
+    
+      .px {
+        width: 200px;
+      }
+      .vw {
+        width: 10vw;
+      }
+      .em {
+        width: 10em;
+      } */
+
+       /* .container{
+         font-size: 10px;
+       }
+      .box {
+        font-size: 10em; em is relative size the parent element font size 10px and 10em is child size 100px
+      } */
+       h1{
+        border: 2px solid red;
+        font-size: 5rem; /* it will be same as em but it is relative to root element(html size by default 16px) 16*5=80px*/
+       }
     </style>
 </head>
+
 <body>
-    <div class="box">
-        this is box
+    <!-- Realative size :- %,vh,vw is relative size  it diffrent for all devise -->
+    <!-- <div class="box">
+        hello i am a box
     </div>
-    <div class="container">
-        this is container Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, inventore atque? Officia harum excepturi magnam porro autem fuga, repudiandae eius praesentium quas officiis explicabo odit quos maxime est placeat tenetur!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus ullam odit itaque fugit cum iusto! Ut voluptate consequuntur consectetur perspiciatis id placeat magnam, quo incidunt quis obcaecati laboriosam molestias?
-    </div>
-    <div class="mycont">
-        this is my cont
-    </div>
+    <div class="parent">
+        <div class="child">
+            Child
+        </div>
+    </div> -->
+
+    <!-- <div class="container">
+        Sahil khola
+    </div> -->
+
+    <!-- <!-- Absolute size :- px,cm,mm,in,em,rem is absolute size it is same for all device -->
+      <!-- <div class="box1">
+        hey i am box 1
+      </div> -->
+
+     <!-- <div class="wrapper">
+        <div class="box px">i am 200px wide</div>
+        <div class="box vw"> i am 10vw wide</div>
+        <div class="box em"> i am 10em wide</div>
+     </div>  -->
+     <h1>Hello world</h1>
+     <!-- <div class="container">
+        <div class="box">
+            Sahil khola
+        </div>
+     </div> -->
 </body>
 </html>
