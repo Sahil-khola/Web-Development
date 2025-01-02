@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        border: 2px solid ;
+        background-color: beige;
+        display: flex;
+      }
+      .boxleft{
+        background-color: aquamarine;
+        border: 1px solid black;
+        width: 47%;
+        margin: 3px;
+        padding: 3px;
+
+      }
+      .boxright{
+        background-color: yellow;
+        border: 1px solid black;
+        width: 47%;
+        margin: 3px;
+        padding: 3px;
+
+      }
+      p{
+        border: 1px solid black;
+      }
+ /* max ka matlb hai kam se kam aur min ka matlb hai jada se jada */
+      @media (max-width:640px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="boxleft">
+     <p>Text 1</p>
+     <p>Text 2</p>
+    </div>
+    <div class="boxright">
+     <img src="../image.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
