@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(120, 120, 85);
+            border: 3px solid;
+            margin: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(72, 39, 39);
+            box-shadow: 23px 20px 51px blue;
+            /* animation-name: sample;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-delay: 1s ;
+            animation-direction: alternate;
+            border-radius: 10px; */
+            animation: sample 5s ease 1s infinite alternate ;
+
+            transition:all;
+            transition-duration: 5s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+        }
+        .box:hover{
+             background-color: red;
+             box-shadow: 23px 20px 51px rgb(5, 5, 15);
+        }
+      @keyframes sample {
+        from {
+            background-color: rgb(72, 39, 39);
+            box-shadow: 23px 20px 51px blue;
+            animation-name: sample;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 1s ;
+            animation-direction: alternate;
+        }
+        to {
+          border-radius: 50%;
+          box-shadow: 23px 20px 51px rgb(35, 35, 150);
+        }
+      }
+
+      @media (width>=320px) and (width<=480px) {
+        .container {
+          background-color: rgb(250, 250, 23);
+        }
+      }
+      @media (width>=480px) and (width<=768px) {
+        .container {
+          background-color: green;
+        }
+      }
+      @media (width>=768px) and (width<=1024px) {
+        .container {
+          background-color: rgb(125, 50, 65);
+        }
+      }
+      @media (width>=1024px) and (width<=1200px) {
+        .container {
+          background-color: rgb(228, 20, 176);
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
